@@ -5,16 +5,14 @@
 
 name: Pipeline
  
-on:
-  push:
-    branches:
+on: push
  
 trigger:
 - master
  
 pool:
   vmImage: ubuntu-latest
- 
+
 steps:
 - task: FtpUpload@2
   inputs:
