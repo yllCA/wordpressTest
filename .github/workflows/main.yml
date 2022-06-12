@@ -17,15 +17,15 @@ jobs:
   my_job:
     steps:
     - task: FtpUpload@2
-      inputs:
-      credentialsOption: 'inputs'
-      serverUrl: 'waws-prod-dm1-303.ftp.azurewebsites.windows.net'
-      username: '$cloudastro-yll-test'
-      password: 'YcA7vJvnNQSGxoFvtoXhmfYwAyFLMjkXA2aar7vSawdZhdKlDKPXs8ZghH1K'
-      rootDirectory: 'src'
-      filePatterns: '**'
-      remoteDirectory: '/site/wwwroot'
-      clean: false
-      cleanContents: false
-      preservePaths: true
-      trustSSL: false
+        inputs:
+        credentialsOption: 'inputs'
+        serverUrl: 'waws-prod-dm1-303.ftp.azurewebsites.windows.net'
+        username: '$cloudastro-yll-test'
+        password: 'YcA7vJvnNQSGxoFvtoXhmfYwAyFLMjkXA2aar7vSawdZhdKlDKPXs8ZghH1K'
+        rootDirectory: 'src'
+        filePatterns: '**'
+        remoteDirectory: '/site/wwwroot'
+        clean: false
+        cleanContents: false
+        preservePaths: true
+        trustSSL: false
