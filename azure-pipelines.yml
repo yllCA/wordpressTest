@@ -3,11 +3,7 @@
 
 name: Build and deploy container app to Azure Web App - cloudastro-yll-test
 
-on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
+on: push
 
 jobs:
   build:
